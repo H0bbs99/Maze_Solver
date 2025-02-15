@@ -1,4 +1,5 @@
 from window import Window
+from drawing import *
 
 def main():
     win = Window(800, 600)
