@@ -2,9 +2,9 @@ from tkinter import Tk
 from window import *
 
 class Point():
-    def __init__(self):
-        self.xcoord = 0
-        self.ycoord = 0
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
 
 class Line():
     def __init__(self, point_a, point_b):
@@ -13,4 +13,4 @@ class Line():
 
     def draw(canvas, fill_color):
         
-        canvas.create_line(x1, y1, x2, y2, fill=fill_color, width=2)
+        canvas.create_line(self.point_a.x,self.point_x.y, self.point_b.x, self.point_b.y, fill=fill_color, width=2)
