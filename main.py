@@ -1,5 +1,5 @@
-from window import Window
-from drawing import *
+from graphic import Window, Point, Line
+
 
 def main():
     win = Window(800, 600)
