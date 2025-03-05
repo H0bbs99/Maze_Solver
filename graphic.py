@@ -2,14 +2,14 @@ from tkinter import Tk, BOTH, Canvas
 
 
 class Window():
-    def __init__(self, width, height):
+    def __init__(   self, width, height):
         self.width = width
         self.height = height
-        self.named_title = "I'm a maze Solver"
+        
         
         self.__root = Tk()
-        self.__root.title(self.named_title)
-        self.__canvas = Canvas(self.__root, width=self.width, height=self.height)
+        self.__root.title("Maze Solver Boot.dev")
+        self.__canvas = Canvas(self.__root, bg="white", width=self.width, height=self.height)
         self.__canvas.pack()
 
         self.__window_running = False
@@ -29,7 +29,7 @@ class Window():
             self.redraw()
     
     def draw_line(self, line, fill_color="black"):
-        line.draw(self.__canvas, fill_colors)
+        line.draw(self.__canvas, fill_color)
         
     def close(self):
         self.__window_running = False
@@ -47,6 +47,6 @@ class Line():
         self.point_a = point_a
         self.point_b = point_b
 
-    def draw(canvas, fill_color):
+    def draw(self, canvas, fill_color):
         
-        canvas.create_line(self.point_a.x,self.point_x.y, self.point_b.x, self.point_b.y, fill=fill_color, width=2)
+        canvas.create_line(self.point_a.x,self.point_a.y, self.point_b.x, self.point_b.y, fill=fill_color, width=2)
