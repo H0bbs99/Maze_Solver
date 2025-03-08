@@ -45,5 +45,5 @@ class Maze():
             return
         
         self._win.redraw()
-        time.sleep(0.3)
+        time.sleep(0.1)
         
