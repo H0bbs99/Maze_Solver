@@ -34,6 +34,10 @@ class Window():
     def close(self):
         self.__window_running = False
 
+    @property
+    def canvas(self):
+        return self.__canvas
+
 
 
 
